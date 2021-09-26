@@ -21,11 +21,13 @@ void ejercicio1(){
 	}
 }
 
+//La solución no es correcta para el ejercicio 2 => 0.1
 void ejercicio2(){int num;
 		
 	printf("Introduzca la edad de la Persona: ");
 	scanf("%d", &num);
 	
+	//Utilice las compuertas AND, OR, resultan más convenientes por ejemplo && ||
 	if (num > 0 , num < 18  ) {
 		printf("\nLa edad es de una persona MENOR");
 	}
@@ -37,12 +39,14 @@ void ejercicio2(){int num;
 	}
 }
 
-void ejercicio3(){int main;
+
+void ejercicio3(){int main; //se coló este int main aquí, de esta forma no se ejecuta el código. Cuidado con el uso de las palabras reservadas => 0.6
 float gradosC, gradosF;
 	
 	printf("Introduce los Grados Fahrenheit:");
 	scanf("%f",&gradosC);
 	gradosF= (gradosC - 32) * 5/9 ;
+		  
 	if (gradosF>=-10 , gradosF<0){
 			printf("\nEn Celsius la temperatura esta fria: %.2f", gradosF);
 	}
@@ -60,6 +64,7 @@ float gradosC, gradosF;
 
 }
 
+// 0.6
 void ejercicio4(){int mes;
 	printf("Pon el numero del mes que desee:");
 	scanf("%i",&mes);
@@ -86,9 +91,10 @@ void ejercicio4(){int mes;
 void ejercicio5(){
 }
 
+//0.6
 void ejercicio6(){float D,A,E;
 	
-	printf("Ingrese su a�o de nacimiento:");
+	printf("Ingrese su año de nacimiento:");
 	scanf("%f",&A);
 	
 	E=2021-A;
